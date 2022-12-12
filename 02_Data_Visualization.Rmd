@@ -5,7 +5,7 @@ date: '2022-12-08'
 output: html_document
 ---
 ## load packages and data
-source("00_load_packages_data.R")
+source("01_load_packages_data.R")
 
 ## box plot for the distribution of monthly mean temperature and total rainfall during 2010 to 2022 August
 ```{r}
