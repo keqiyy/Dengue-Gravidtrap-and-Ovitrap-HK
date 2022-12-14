@@ -1,1 +1,4 @@
 
+Model 1: The DLNM model for area ovitrap/gravidtrap index, data from January 2010 to August 2022.
+Model 2: The DLNM model for number of mosquitoes per 1000 traps, data from April 2020 to August 2022.
+Model 3: The DLNM model for area ovitrap/gravidtrap index, adding number of mosquitoes per 1000 traps as a predictor, data from April 2020 to August 2022.
