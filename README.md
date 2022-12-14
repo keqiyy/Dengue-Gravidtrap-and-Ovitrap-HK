@@ -3,7 +3,14 @@
 ***
 This study details a methodological framework to estimate the delayed and nonlinear impact of climatic predictors (monthly mean temperature and monthly total rainfall) on activities of mosquitoes (extensiveness and abundance), which indicates the risk of dengue fever. The approach models the impact of climate factors in Hong Kong by using distributed lag nonlinear models (DLNM) with Bayesian hierarchical models fitted using integrated nested Laplace approximations in R (R-INLA). The modelling approach considers climate factors and random effects including year, month, and districts. These exposure-lag-response associations can reveal how climate factors might impact activities of mosquitoes in the months leading up to an outbreak in Hong Kong.
 ***
+###Data Description
+**Index**: Ovitrap and gravidtrap are used to monitor mosquito activity in Hong Kong. Ovitrap provides the area ovitrap index (AOI), which is the proportion of positive traps to total traps. Since April 2020, it has been replaced by gravidtrap. Gravidtrap provides the area gravidtrap index (AGI) which is same as AOI, as well as the area density index (ADI), which represents the number of adult mosquitoes in the total number of positive traps.
 
+**Mean Temperature**: To include unobserved factors for each region of Hong Kong, we divided Hong Kong into three districts for the study, Hong Kong Island & Kowloon, New Territories East，and New Territories West. The regions were set as random effect in models. We selected several weather stations for each region (stations to cover the whole Hong Kong area and with less than 5% missing data) and calculated the monthly mean temperature based on the daily mean temperature. Data sources are Hong Kong Observatory https://www.hko.gov.hk/en/cis/climat.htm.
+
+**Total Rainfall**: To include unobserved factors for each region of Hong Kong, we divided Hong Kong into three districts for the study, Hong Kong Island & Kowloon, New Territories East，and New Territories West. The regions were set as random effect in models. We selected several weather stations and rainfall stations for each region (stations to cover the whole Hong Kong area and with less than 5% missing data) and calculated the monthly total rainfall based on the daily total rainfall. Data sources are Hong Kong Observatory https://www.hko.gov.hk/en/cis/climat.htm.
+
+***
 A description of each file and folder is provided below:
 
 **00_Data_Preprocess.R**: R script to process raw data, transferring daily data to monthly data. This is for reference. The final data file (in .csv format) is provided in Raw Data which is named as "Three districts all dataset-1.csv". 
