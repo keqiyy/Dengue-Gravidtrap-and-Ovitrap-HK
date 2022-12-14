@@ -15,7 +15,7 @@ This study collected data from January 2010 to August 2022, including mosquito i
 ***
 A description of each file and folder is provided below:
 
-**00_Data_Preprocess.R**: R script to process raw data, transferring daily data to monthly data. This is for reference. The final data file (in .csv format) is provided in Raw Data which is named as "Three districts all dataset-1.csv". 
+**00_Data_Preprocess.R**: R script to process raw data, transferring daily data to monthly data. This is for reference. The final data file (in .csv format) is provided in the Raw Data folder which is named as "Three districts all dataset-1.csv". 
 
 **01_load_packages_data.R**: R script to load and process data needed to run DLNMs in INLA models.
 
